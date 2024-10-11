@@ -1,0 +1,77 @@
+main.dashboard .dash-page {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img:first-child {
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+}
+
+.card .background{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 250px;
+}
+
+.card:first-child .background,
+.card:nth-child(8) .background {
+    background-image: url(../images/course-01.jpg);
+    
+}
+
+.card:nth-child(2) .background,
+.card:nth-child(6) .background {
+    background-image: url(../images/course-02.jpg);
+
+}
+
+.card:nth-child(3) .background,
+.card:nth-child(7) .background {
+    background-image: url(../images/course-03.jpg);
+
+}
+
+.card:nth-child(4) .background,
+.card:nth-child(10) .background {
+    background-image: url(../images/course-04.jpg);
+
+}
+
+.card:nth-child(5) .background,
+.card:nth-child(9) .background {
+    background-image: url(../images/course-05.jpg);
+
+}
+
+.card p:first-of-type {
+    padding: 0 20px 70px 20px;
+    line-height: 1.7;
+}
+
+.card .details {
+    border-top: 2px solid #EEE;
+    padding-top: 20px;
+}
+
+.card .details::before {
+    content: "Course Info";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: var(--brandColor);
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: .9rem;
+}

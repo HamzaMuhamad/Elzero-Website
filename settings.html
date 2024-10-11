@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Normalize file -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- Font Awesome File -->
+        <link rel="stylesheet", href="css/all.min.css">
+        
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Framework (: -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- CSS File -->
+        <link rel="stylesheet" href="css/settings.css">
+
+        <!--Open Sans Code From Google  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- Add Favicon -->
+        <link rel="icon" type="x-icon" href="images/settings.png">
+
+        <!-- Add Open graph links (Image, describtion, title, and type) -->
+        <meta property="og:image" content="images/elzero.jpg">
+        <meta property="og:title" content="Elzero Web School">
+        <meta property="This is the Osama Elzero Website idea and I built this site by watch some few videos on his great course, don't lose the opportunity to visit it!">
+        <meta property="og:type" content="website">
+        <meta property="facebook:card" content="facebook">
+        <title>Settings</title>
+
+
+    </head>
+
+    <body>
+        <!-- Start Sidebar -->
+        <div class="page d-flex">
+
+            <aside class="p-relative bg-white ">
+    
+                <p class="p-relative">Elzero</p>
+                <div class="pages flex-column gap-10">
+                    
+                    <a href="index.html" title="Dashboard" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <p class="hide-mobile">Dashboard</p>
+                    </a>
+    
+                    <a href="settings.html" title="Settings" class="gap-10 flex-cen-cen active">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <p class="hide-mobile">Settings</p>
+                    </a>
+    
+                    <a href="profile.html" title="Profile" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <p class="hide-mobile">Profile</p>
+                    </a>
+    
+                    <a href="projects.html" title="Projects" class="gap-10 flex-cen-cen">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <p class="hide-mobile">Projects</p>
+                    </a>
+    
+                    <a href="courses.html" title="Courses" class="gap-10 flex-cen-cen">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <p class="hide-mobile">Courses</p>
+                    </a>
+    
+                    <a href="friends.html" title="Friends" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <p class="hide-mobile">Friends</p>
+                    </a>
+    
+                    <a href="files.html" title="Files" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <p class="hide-mobile">Files</p>
+                    </a>
+    
+                    <a href="plans.html" title="Palns" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <p class="hide-mobile">Palns</p>
+                    </a>
+    
+                </div>
+    
+            </aside>
+    
+            <!-- End Sidebar -->
+            
+            <!-- Start Dashboard -->
+            
+            <main class="dashboard">
+                <section class="search-bar bg-white d-flex">
+                    <div class="input-field p-relative">
+                        <input type="search" name="" id="" placeholder="Type a keyword">
+                    </div>
+        
+                    <div class="notify-image d-flex">
+                        <i class="fa-regular fa-bell p-relative"></i>
+                        <a href="profile.html">
+                            <img src="images/elzero.jpg" alt="profile image">
+                        </a>
+        
+                    </div>
+                </section>
+    
+                <div class="dash-content p-20">
+    
+                    <h2 class="main-head">Settings</h2>
+                    <div class="dash-page gap-20">
+
+                        <!-- Start Site Control -->
+
+                        <section class="site-control bg-white p-20">
+                            <h3 class="box-head">Site Control</h3>
+                            <p class="box-paragraph">Control The Website If There Is Maintainance</p>
+                            <div class="d-flex mt-30 onOroff">
+                                <div class="info">
+                                    <p class="">Website Control</p>
+                                    <p class="box-paragraph">Open/Close Website And Type The Reason</p>
+                                </div>
+
+                                <div class="switch">
+                                    <input type="checkbox" checked>
+                                </div>
+                            </div>
+
+                            <textarea name="" id="" placeholder="Close Message Content"></textarea>
+                        </section>
+
+                        <!-- End Site Control -->
+
+                        <!-- Start General Info  -->
+
+                        <section class="p-20 bg-white general-info">
+                            <h3 class="box-head">General Info</h3>
+                            <p class="box-paragraph">General Information About Your Account</p>
+
+                            <form action="" class="mt-20 fs--8rem">
+                                <label for="fname" class="c-gray">First Name</label>
+                                <input type="text" name="" id="fname" placeholder="First Name" class="border-gray p-10 rad-10 w-full mt-10">
+                                <label for="lname" class="c-gray">Last Name</label>
+                                <input type="text" name="" id="lname" placeholder="Last Name" class="border-gray p-10 rad-10 w-full mt-10 mb-20">
+                            
+                                <label for="email" class="c-gray">Email</label>
+                                <div class="flex-cen-cen mt-10 gap-10 change-email">
+                                    <input type="email" name="" id="email" value="https://elzero.org" class="border-gray rad-10 w-full p-10" readonly>
+                                    <input type="submit" value="Change">
+
+                                </div>
+                            </form>
+                        </section>
+
+                        <!-- End General Info  -->
+
+                        <!-- Start Security Info -->
+
+                        <section class="security bg-white p-20">
+                            <h3 class="box-head">Security Info</h3>
+                            <p class="box-paragraph">Security Information About Your Account</p>
+
+                            <div class="password flex-cen-between">
+                                <div class="text">
+                                    <p>Password</p>
+                                    <p class="c-gray fs--8rem mt-10">Last Change On 25/09/2024</p>
+                                </div>
+
+                                <input type="submit" value="Change" class="btn-shape">
+                            </div>
+
+                            <div class="authentication flex-cen-between">
+                                <div class="text">
+                                    <p>Two-Factor Authentication</p>
+                                    <p class="c-gray fs--8rem mt-10">Enable/Disable The Feature</p>
+                                </div>
+
+                                <div class="switch">
+                                    <input type="checkbox" checked>
+                                </div>
+                            </div>
+
+                            <div class="devices flex-cen-between">
+                                <div class="text">
+                                    <p>Devices</p>
+                                    <p class="c-gray fs--8rem mt-10">Check The Login Devices List</p>
+                                </div>
+
+                                <button class="btn-shape">Devices</button>
+                            </div>
+
+
+                        </section>
+
+                        <!-- End Security Info -->
+
+                        <!-- Start Social Info -->
+                        
+                        <section class="bg-white p-20 social-info">
+                            <h3 class="box-head">Social Info</h3>
+                            <p class="box-paragraph">Social Media Information</p>
+
+                            <form class="mt-30">
+                                <div class="mb-20 rad-10 p-relative">
+
+                                    <input type="text" name="" id="" placeholder="Twitter Username" class="border-gray p-10 w-full rad-10">
+                                    <i class="fa-brands fa-x-twitter p-abs"></i>
+                                    
+                                </div>
+
+                                <div class="mb-20 rad-10 p-relative">
+
+                                    <input type="text" name="" id="" placeholder="Facebook Username" class="border-gray p-10 w-full rad-10">
+                                    <i class="fa-brands fa-facebook-f p-abs"></i>
+
+                                </div>
+
+                                <div class="mb-20 rad-10 p-relative">
+
+                                    <input type="text" name="" id="" placeholder="Linkedin Username" class="border-gray p-10 w-full rad-10">
+                                    <i class="fa-brands fa-linkedin-in p-abs"></i>
+
+                                </div>
+
+                                <div class="rad-10 p-relative">
+
+                                    <input type="text" name="" id="" placeholder="YouTube Username" class="border-gray p-10 w-full rad-10">
+                                    <i class="fa-brands fa-youtube p-abs"></i>
+
+                                </div>
+                                
+                            </form>
+                        </section>
+
+                        <!-- End Social Info -->
+
+                        <!-- Start Widgets Control -->
+                        
+                        <section class="bg-white p-20 widgets">
+                            <h3 class="box-head">Widgets Control</h3>
+                            <p class="box-paragraph">Show/Hide Widgets</p>
+
+                            <form class="mt-20">
+                                
+                                <div class="d-flex gap-10 mb-20 widg">
+                                    <input type="checkbox" name="" id="task1" checked>
+                                    <label for="task1">Quick Draft</label>
+                                </div>
+
+                                <div class="d-flex gap-10 mb-20 widg">
+                                    <input type="checkbox" name="" id="task2" checked>
+                                    <label for="task2">Yearly Targets</label>
+                                </div>
+
+                                <div class="d-flex gap-10 mb-20 widg">
+                                    <input type="checkbox" name="" id="task3" checked>
+                                    <label for="task3">Tickets Statistics</label>
+                                </div>
+
+                                <div class="d-flex gap-10 mb-20 widg">
+                                    <input type="checkbox" name="" id="task4" checked>
+                                    <label for="task4">Latest News</label>
+                                </div>
+
+                                <div class="d-flex gap-10 mb-20 widg">
+                                    <input type="checkbox" name="" id="task5">
+                                    <label for="task5">Latest Tasks</label>
+                                </div>
+
+                                <div class="d-flex gap-10 widg">
+                                    <input type="checkbox" name="" id="task6" checked>
+                                    <label for="task6">Top Search Items</label>
+                                </div>
+                            </form>
+                        </section>
+
+                        <!-- End Widgets Control -->
+
+                        <!-- Start Backup Manager -->
+                        
+                        <section class="p-20 bg-white backup">
+                            <h3 class="box-head">Backup Manager</h3>
+                            <p class="box-paragraph">Control Backup Time And Location</p>
+
+                            <form class="mt-30">
+                                <div class="select d-flex gap-10 mb-20">
+                                    <input type="radio" name="time" id="daily">
+                                    <label for="daily">Daily</label>
+                                </div>
+
+                                <div class="select d-flex gap-10 mb-20">
+                                    <input type="radio" name="time" id="weekly">
+                                    <label for="weekly">Weekly</label>
+                                </div>
+
+                                <div class="select d-flex gap-10 mb-20">
+                                    <input type="radio" name="time" id="monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </div>
+                            </form>
+
+                            <form class="d-flex gap-10">
+                                <input type="radio" name="size" id="">
+                                <input type="radio" name="size" id="" checked>
+                                <input type="radio" name="size" id="">
+                            </form>
+                        </section>
+
+                        <!-- End Backup Manager -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

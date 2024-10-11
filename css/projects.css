@@ -1,0 +1,105 @@
+section .date {
+    text-align: end;
+    font-size: .7rem;
+    margin-top: -10px;
+}
+
+section .persons {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+section .persons img {
+    width: 35px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+section .persons img:hover {
+    z-index: 1;
+    cursor: pointer;
+}
+
+section .persons img:not(:first-child) {
+    margin-left: -20px;
+}
+
+section .hobbies {
+    padding: 20px 0;
+    text-align: end;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+@media (max-width: 767px) {
+    section .hobbies {
+        text-align: start;
+    }
+
+    section .hobbies span {
+        display: block;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
+
+section .earn {
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    section .earn {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+section .earn .prog {
+    position: relative;
+    background-color: #dddddd;
+    height: 9px;
+    width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section .earn .prog span {
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+section:first-child .earn .prog span,
+section:nth-child(6) .earn .prog span {
+    background-color: #ff2b06;
+}
+
+section:not(:first-child, :nth-child(3), :nth-child(6)) .earn .prog span {
+    background-color: #30f000c7;
+}
+
+section:nth-child(3) .earn .prog span {
+    background-color: rgb(8, 123, 255);
+}
+
+section .earn > span {
+    text-align: end;
+    position: relative;
+    font-size: .9rem;
+}
+
+section .earn > span::before {
+    content: "\24";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: .8rem;
+    left: -13px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+
+}

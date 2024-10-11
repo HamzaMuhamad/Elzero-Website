@@ -1,0 +1,238 @@
+/* Start Personal Info */
+
+.profile-info {
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .profile-info {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1216px) and (max-width: 1679px) {
+    .profile-info {
+        grid-column: 1 / col-2;
+    }
+}
+
+@media (min-width: 1680px) {
+    .profile-info {
+        grid-column: 1 / col-3;
+    }
+}
+
+.profile-info .personal-image {
+    align-self: center;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+
+}
+
+.profile-info .personal-image img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .profile-info .personal-image  {
+        border-right: 1px solid rgb(230, 230, 230);
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-info .personal-image  {
+        border-bottom: 1px solid rgb(230 230 230);
+        align-self: stretch;
+        padding: 20px 50px;
+        width: 100%;
+    }
+}
+
+.profile-info .personal-image h3 {
+    font-size: 1.1rem;
+}
+
+.profile-info .personal-image p {
+    color: gray;
+}
+
+.profile-info .personal-image p:first-of-type {
+    font-size: .8rem;
+}
+
+.profile-info .personal-image .prog {
+    position: relative;
+    background-color: #EEE;
+    height: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.profile-info .personal-image .prog span {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--brandColor);
+    border-radius: 20px;
+}
+
+.profile-info .personal-image .stars {
+    gap: 5px;
+}
+
+.profile-info .personal-image .stars i {
+    color: #FFD43B;
+}
+
+.profile-info .personal-image p:last-of-type {
+    font-size: .7rem;
+}
+
+.profile-info .total {
+    align-self: stretch;
+    flex: 1;
+    
+}
+
+
+.profile-info .total > div {
+    flex-wrap: wrap;
+    color: gray;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .profile-info .total > div {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+}
+
+
+.profile-info .total > div:not(:first-of-type) {
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.profile-info .total > div p:not(:first-of-type) {
+    padding-bottom: 15px;
+
+}
+
+.profile-info .total > div p:first-of-type {
+    margin-bottom: 10px;
+    font-weight: bold;
+} 
+
+@media (max-width: 767px) {
+    .profile-info .total > div p:first-of-type {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.profile-info .total > div p span {
+    color: black;
+}
+
+.profile-info .total > div p {
+    min-width: 250px;
+}
+
+
+@media (max-width: 767px) {
+    .profile-info .total > div p,
+    .profile-info .total > div p span{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-info .total p:not(:first-of-type) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 9px;
+    }
+
+    .profile-info .total > div {
+        gap: 15px;
+    }
+
+    .profile-info .total  p:not(:first-of-type) span {
+        width: 100%;
+    }
+    
+    /* FOR ALL SPANS */
+    .profile-info .total p:not(:first-of-type) span {
+        font-weight: 500;
+
+    }
+}
+
+/* End Personal Info */
+
+
+
+/* Start My skills  */
+
+.skills .content > div {
+    padding: 10px 0;
+    
+}
+
+
+.skills .content > div:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+
+
+/* End My skills  */
+
+/* Start Latest Activities */
+
+@media (min-width: 1216px) and (max-width: 1679px) {
+    .activities {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1680px) {
+    .activities {
+        grid-column: span 3;
+    }
+}
+
+.activities .content > div {
+    padding: 20px 0;
+    align-items: center;
+
+}
+
+
+.activities .content > div .text {
+    flex: 1;
+
+}
+
+.activities .content > div:not(:last-of-type) {
+    border-bottom: 1px solid #EEE;
+}
+
+.activities .content img {
+    width: 50px;
+}
+
+/* End Latest Activities */

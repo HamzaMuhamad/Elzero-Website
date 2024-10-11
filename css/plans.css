@@ -1,0 +1,170 @@
+main.dashboard .dash-page {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.price-card .price {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid white;
+}
+.price-card .price p {
+    font-weight: bold; 
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.price-card .price div{
+    font-size: 2.5rem;
+    width: fit-content;
+    margin: 10px auto 0;
+    font-weight: 500;
+}
+
+.price-card .price div span{
+    top: -5px;
+    left: -20px;
+    font-size: 1.5rem;
+
+
+}
+
+.price-card > p {
+    padding: 20px 25px;
+    border-bottom: 1px solid #EEE;
+}
+
+.price-card > p::after {
+    content: "\f05a";
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    color: gray;
+}
+
+.price-card .btn-shape {
+
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 20px auto 0;
+    color: white;
+}
+
+/* First Card */
+
+.price-card:first-of-type .price {
+    background-color: var(--green1);
+    outline: 3px solid var(--green1);
+}
+
+.price-card:first-of-type > p:not(:first-of-type, :nth-of-type(2), :nth-of-type(3))::before {
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--red1);
+    font-size: 15px;
+
+}
+
+.price-card:first-of-type > p:first-of-type::before,
+.price-card:first-of-type > p:nth-of-type(2)::before,
+.price-card:first-of-type > p:nth-of-type(3)::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green1);
+    font-size: 15px;
+
+}
+
+.price-card:first-of-type .btn-shape {
+    background-color: var(--green1);
+}
+
+/* Second Card */
+
+.price-card:nth-of-type(2) .price {
+    background-color: var(--blue1);
+    outline: 3px solid var(--blue1);
+}
+
+.price-card:nth-of-type(2) > p:last-of-type::before, 
+.price-card:nth-of-type(2) > p:nth-last-of-type(2)::before {
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--red1);
+    font-size: 15px;
+
+}
+
+.price-card:nth-of-type(2) > p:not(:last-of-type, :nth-last-of-type(2))::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green1);
+    font-size: 15px;
+
+}
+
+.price-card:nth-of-type(2) .btn-shape {
+    background-color: var(--blue1);
+}
+
+/* Third Card */
+
+.price-card:last-of-type .price {
+    background-color: var(--orange1);
+    outline: 3px solid var(--orange1);
+}
+
+.price-card:last-of-type > p::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green1);
+    font-size: 15px;
+}
+
+.price-card:last-of-type > div:last-of-type {
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 2px;
+    padding: 5px;
+}
+
+
+
+
+
+/* 
+NOTE: # Inhance the 'aside' boxes when selected to be as a part of the dashboard 
+NOTE: # Adding the developer's section
+
+*/
+
+

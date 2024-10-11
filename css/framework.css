@@ -1,0 +1,246 @@
+/* FrameWorks */
+
+/* INFO: Fonts */
+/* ---------------------- */
+.box-head {
+    font-size: 1.6rem;
+}
+
+.fs--8rem {
+    font-size: .8rem
+}
+
+
+
+/* INFO: Padding & Margin */
+/* ---------------------- */
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
+/* INFO: Widths & Heights */
+/* ---------------------- */
+.w-full {
+    width: 100%;
+}
+
+
+
+/* INFO: Medias */
+/* ------------ */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+/* INFO: Display Settings */
+/* ---------------------- */
+.d-flex {
+    display: flex;
+}
+
+
+/* INFO: Gaps */
+/* ---------- */
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+
+/* INFO: Position Settings */
+/* ---------------------- */
+.p-relative {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+
+/* INFO: Colors */
+/* ------------ */
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: rgb(184, 184, 184);
+}
+
+.c-gray {
+    color: rgb(90, 90, 90)
+}
+
+
+/* INFO: Borders */
+/* ------------ */
+.border-gray {
+    border-color: rgb(182, 182, 182);
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+
+/* INFO: Components */
+/* ---------------- */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.main-head {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    position: relative;
+    width: fit-content;
+    padding-bottom: 15px;
+}
+
+h2.main-head::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 70%;
+    background-image: linear-gradient(90deg, black 40%, white 40%);
+}
+
+.box-paragraph{
+    font-size: .9rem;
+    color: gray;
+    padding: 5px 0;
+    letter-spacing: 1.1px;
+    margin-top: 10px;
+}
+
+.flex-column {
+    /* NOTE: Give The content flex: 1; */
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-cen-cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-cen-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active {
+    background-color: #f6f6f9;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btn-shape {
+    padding: 4px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+
+.switch input[type="checkbox"] {
+    width: 60px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: #CCC;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--def-trans);
+    display: flex;
+    align-items: center;
+}
+
+.switch input[type="checkbox"]:checked {
+    background-color: var(--brandColor);
+}
+
+.switch input[type="checkbox"]::before {
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    color: #CCC;
+    background-color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--def-trans);
+
+}
+
+.switch input[type="checkbox"]:checked::before{
+    content: "\f00c";
+    color: var(--brandColor);
+    left: 38px;
+}
+
+/* --------------------------------------- */
+
+
+
+.small-gray-box {
+    display: inline-block;
+    margin: 3px;
+    padding: 4px 7px;
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    font-size: .82rem;
+    font-weight: 500;
+}

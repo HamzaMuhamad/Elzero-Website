@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        
+        <!-- Normalize file -->
+        <link rel="stylesheet" href="css/normalize.css">
+        
+        <!-- Font Awesome File -->
+        <link rel="stylesheet", href="css/all.min.css">
+        
+        <!-- Framework (: -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Defining CSS File -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- To Make Website Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Open Sans Code From Google  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- Add Favicon -->
+        <link rel="icon" type="x-icon" href="images/dashboard.png">
+
+        <!-- Add Open graph links (Image, describtion, title, and type) -->
+        <meta property="og:image" content="images/elzero.jpg">
+        <meta property="og:title" content="Elzero Web School">
+        <meta property="This is the Osama Elzero Website idea and I built this site by watch some few videos on his great course, don't lose the opportunity to visit it!">
+        <meta property="og:type" content="website">
+        <meta property="facebook:card" content="facebook">
+        
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <!-- Start Sidebar -->
+        <div class="page d-flex">
+
+            <aside class="p-relative bg-white ">
+    
+                <p class="p-relative">Elzero</p>
+                <div class="pages flex-column gap-10">
+                    
+                    <a href="index.html" title="Dashboard" class="gap-10 flex-cen-cen active">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <p class="hide-mobile">Dashboard</p>
+                    </a>
+    
+                    <a href="settings.html" title="Settings" class="gap-10 flex-cen-cen">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <p class="hide-mobile">Settings</p>
+                    </a>
+    
+                    <a href="#" title="Profile" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <p class="hide-mobile">Profile</p>
+                    </a>
+    
+                    <a href="#" title="Projects" class="gap-10 flex-cen-cen">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <p class="hide-mobile">Projects</p>
+                    </a>
+    
+                    <a href="#" title="Courses" class="gap-10 flex-cen-cen">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <p class="hide-mobile">Courses</p>
+                    </a>
+    
+                    <a href="#" title="Friends" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <p class="hide-mobile">Friends</p>
+                    </a>
+    
+                    <a href="#" title="Files" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <p class="hide-mobile">Files</p>
+                    </a>
+    
+                    <a href="#" title="Palns" class="gap-10 flex-cen-cen">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <p class="hide-mobile">Palns</p>
+                    </a>
+    
+                </div>
+    
+            </aside>
+    
+            <!-- End Sidebar -->
+            
+            <!-- Start Dashboard -->
+            
+            <main class="dashboard">
+                <section class="search-bar bg-white d-flex">
+                    <div class="input-field p-relative">
+                        <input type="search" name="" id="" placeholder="Type a keyword">
+                    </div>
+        
+                    <div class="notify-image d-flex">
+                        <i class="fa-regular fa-bell p-relative"></i>
+                        <a href="profile.html">
+                            <img src="images/elzero.jpg" alt="profile image">
+                        </a>
+        
+                    </div>
+                </section>
+    
+                <div class="dash-content p-20">
+    
+                    <h2 class="main-head">Dashboard</h2>
+                    <div class="dash-page gap-20">
+                        <section class="welcome flex-column bg-white gap-20">
+            
+                            <div class="head p-relative d-flex">
+                                <div class="text">
+                                    <h3 class="box-head">Welcome</h3>
+                                    <p class="box-paragraph">Elzero</p>
+                                </div>
+            
+                                <img src="images/welcome.png" alt="Welcome Image">
+                            </div>
+            
+                            <div class="info gap-20 d-flex">
+            
+                                <div class="box gap-20 flex-column">
+                                    <h3>Osama Elzero</h3>
+                                    <p>Developer</p>
+                                </div>
+            
+                                <div class="box gap-20 flex-column">
+                                    <h3>80</h3>
+                                    <p>Projects</p>
+                                </div>
+            
+                                <div class="box gap-20 flex-column">
+                                    <h3>$8500</h3>
+                                    <p>Earned</p>
+                                </div>
+                            </div>
+                            
+                            <a href="#profile" class="main-button p-20">Profile</a>
+                            
+                        </section>
+
+                        <!-- Draft -->
+                        <section class="draft p-20 bg-white">
+                            <h3 class="box-head">Quick Draft</h3>
+                            <p class="box-paragraph">Write A Draft For Your Ideas</p>
+                            <form action="" class="flex-column mt-20">
+                                <input type="text" placeholder="Title">
+                                <textarea name="" id="" placeholder="Your Thought"></textarea>
+                                <a href="#" class="main-button">Save</a>
+                            </form>
+                        </section>
+
+                        <!-- Target -->
+                        <section class="target flex-column p-20 bg-white">
+                            <h3 class="box-head">Yearly Targets</h3>
+                            <p class="box-paragraph">Targets Of The Year</p>
+        
+                            <div class="item d-flex gap-10 mt-20">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <div class="percent">
+                                    <p>Money</p>
+                                    <p>$20.000</p>
+                                    <div class="line p-relative">
+                                        <div style="width: 80%;"><span class="flex-cen-cen p-abs">80%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex gap-10">
+                                <i class="fa-solid fa-code"></i>
+                                <div class="percent">
+                                    <p>Projects</p>
+                                    <p>24</p>
+                                    <div class="line p-relative">
+                                        <div style="width: 55%;"><span class="flex-cen-cen p-abs">55%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex gap-10">
+                                <i class="fa-solid fa-user"></i>
+                                <div class="percent">
+                                    <p>Team</p>
+                                    <p>12</p>
+                                    <div class="line p-relative">
+                                        <div style="width: 75%;"><span class="flex-cen-cen p-abs">75%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Statistics -->
+                        <section class="stats p-20 bg-white">
+                            <h3 class="box-head">Tickets Statistics</h3>
+                            <p class="box-paragraph">Enerything About Support Tickets</p>
+
+                            <div class="info d-flex gap-20 mt-20">
+
+                                <div class="flex-column p-20">
+                                    <i class="fa-regular fa-rectangle-list"></i>
+                                    <h3>2500</h3>
+                                    <p>Total</p>
+                                </div>
+
+                                <div class="flex-column p-20">
+                                    <i class="fa-solid fa-spinner"></i>
+                                    <h3>500</h3>
+                                    <p>Pending</p>
+                                </div>
+
+                                <div class="flex-column p-20">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <h3>1900</h3>
+                                    <p>Closed</p>
+                                </div>
+
+                                <div class="flex-column p-20">
+                                    <i class="fa-regular fa-rectangle-xmark"></i>
+                                    <h3>100</h3>
+                                    <p>Deleted</p>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Latest News -->
+                        <section class="latest-news flex-column p-20 bg-white">
+                            <h3 class="box-head">Latest News</h3>
+                            <div class="big-content mt-20">
+                        
+                                <div class="content d-flex">
+                                    <img src="images/news-01.png" alt="">
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>Created SASS Section</h3>
+                                            <p>New SASS Examples & Tutorials</p>
+                                        </div>
+                        
+                                        <div class="period">3 Days Ago</div>
+                                    </div>
+                                </div>
+                        
+                                    <div class="content d-flex">
+                                        <img src="images/news-02.png" alt="">
+                                        <div class="info d-flex">
+                                            <div class="text">
+                                                <h3>Changed The Design</h3>
+                                                <p>A Brand New Website Design</p>
+                                            </div>
+                        
+                                            <div class="period">5 Days Ago</div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="content d-flex">
+                                        <img src="images/news-03.png" alt="">
+                                        <div class="info d-flex">
+                                            <div class="text">
+                                                <h3>Team Increased</h3>
+                                                <p>3 Developers Joined The Team</p>
+                                            </div>
+                        
+                                            <div class="period">7 Days Ago</div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="content d-flex">
+                                        <img src="images/news-04.png" alt="">
+                                        <div class="info d-flex">
+                                            <div class="text">
+                                                <h3>Added Payment Gateway</h3>
+                                                <p>Many New Payment Gateways Added</p>
+                                            </div>
+                        
+                                            <div class="period">9 Days Ago</div>
+                                        </div>
+                        
+                                    </div>
+                            </div>
+                        
+                        </section>
+
+                        <!-- Latest Tasks -->
+                        <section class="latest-tasks flex-column p-20 bg-white">
+                            <h3 class="box-head">Latest Tasks</h3>
+                        
+                            <div class="d-flex mt-20">
+                                <div class="text">
+                                    <h3>Record One New Video</h3>
+                                    <p>Record Python Create Exe Project</p>
+                                </div>
+                        
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        
+                            <div class="d-flex">
+                                <div class="text">
+                                    <h3>Write Article</h3>
+                                    <p>Write Low Level vs High Level Languages</p>
+                                </div>
+                        
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        
+                            <div class="d-flex">
+                                <div class="text">
+                                    <h3>Finish Project</h3>
+                                    <p>Publish Academy Programming Project</p>
+                                </div>
+                        
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        
+                            <div class="d-flex">
+                                <div class="text">
+                                    <h3>Attend The Meeting</h3>
+                                    <p>Attend The Project Business Analysis Meeting</p>
+                                </div>
+                        
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        
+                            <div class="d-flex">
+                                <div class="text">
+                                    <h3>Finish Lesson</h3>
+                                    <p>Finish Teaching Flex Box</p>
+                                </div>
+                        
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        
+                        </section>
+
+                        <!-- Top Search  -->
+                        <section class="top-search flex-column p-20 bg-white">
+                            <h3 class="box-head">Top Search Items</h3>
+                            <div class="flex-column mt-20">
+                        
+                                <div class="d-flex">
+                                    <p>Keyword</p>
+                                    <p>Search Count</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>Programming</p>
+                                    <p class="data">220</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>JavaScript</p>
+                                    <p class="data">180</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>PHP</p>
+                                    <p class="data">160</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>Code</p>
+                                    <p class="data">145</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>Design</p>
+                                    <p class="data">110</p>
+                                </div>
+                        
+                                <div class="d-flex">
+                                    <p>Logic</p>
+                                    <p class="data">95</p>
+                                </div>
+                            </div>
+                        
+                        
+                        </section>
+
+                        <!-- Latest Uploads -->
+                        <section class="latest-uploads flex-column p-20 bg-white">
+                            <h3 class="box-head">Latest Uploads</h3>
+                        
+                            <div class="content mt-20">
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/pdf.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>my-file.pdf</h3>
+                                            <p>Elzero</p>
+                                        </div>
+                        
+                                        <div class="data">2.9mb</div>
+                                    </div>
+                        
+                                </div>
+                        
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/avi.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>My-Video-File.avi</h3>
+                                            <p>Admin</p>
+                                        </div>
+                        
+                                        <div class="data">4.9mb</div>
+                                    
+                                    </div>
+                                </div>
+                                    
+                        
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/psd.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>My-Psd-File.pdf</h3>
+                                            <p>Osama</p>
+                                        </div>
+                        
+                                        <div class="data">4.5mb</div>
+                                    </div>
+                                    
+                                </div>
+                        
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/zip.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>My-Zip-File.pdf</h3>
+                                            <p>User</p>
+                                        </div>
+                        
+                                        <div class="data">8.9mb</div>
+                                    </div>
+                                    
+                                </div>
+                        
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/dll.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>My-DLL-File.pdf</h3>
+                                            <p>Admin</p>
+                                        </div>
+                        
+                                        <div class="data">4.9mb</div>
+                                    </div>
+                                    
+                                </div>
+                        
+                                <div class="with-file-img d-flex gap-10">
+                                    <img  src="images/eps.svg" alt="">
+                                    
+                                    <div class="info d-flex">
+                                        <div class="text">
+                                            <h3>My-Eps-File.pdf</h3>
+                                            <p>Designer</p>
+                                        </div>
+                        
+                                        <div class="data">8.9mb</div>
+                                    </div>
+                                    
+                                </div>
+                        
+                            </div>
+                        </section>
+
+                        <!-- Last Project Progress -->
+                        <section class="last-prog flex-column p-20 p-relative bg-white">
+                            <img src="images/project.png" alt="" class="p-abs">
+                            <h3 class="box-head">Last Project Progress</h3>
+                            <div class="content p-relative flex-column mt-20">
+                        
+                                <div class="prog d-flex gap-10">
+                                    <div class="circle p-relative bg-white"></div>
+                                    <p>Got The Project</p>
+                                </div>
+                        
+                                <div class="prog d-flex gap-10">
+                                    <div class="circle p-relative bg-white"></div>
+                                    <p>Started The Project</p>
+                                </div>
+                        
+                                <div class="prog d-flex gap-10">
+                                    <div class="circle p-relative bg-white"></div>
+                                    <p>The Project About To Finish</p>
+                                </div>
+                        
+                                <div class="prog d-flex gap-10">
+                                    <div class="circle p-relative bg-white"></div>
+                                    <p>Test The Project</p>
+                                </div>
+                        
+                                <div class="prog d-flex gap-10">
+                                    <div class="circle p-relative bg-white"></div>
+                                    <p>Finish The Project & Get Money</p>
+                                </div>
+                        
+                            </div>
+                        </section>
+
+                        <!-- Reminders -->
+                        <section class="remind flex-column p-20 bg-white">
+                            <h3 class="box-head">Reminders</h3>
+                        
+                            <div class="content mt-20">
+                        
+                                <div class="package d-flex">
+                        
+                                    <div class="circle"></div>
+                        
+                                    <div class="text flex-column">
+                                        <h3>Chek My Tasks List</h3>
+                                        <p>28/09/2022 - 12:00am</p>
+                                    </div>
+                        
+                                </div>
+                        
+                                <div class="package d-flex">
+                        
+                                    <div class="circle"></div>
+                        
+                                    <div class="text flex-column">
+                                        <h3>Check My Projects</h3>
+                                        <p>26/10/2022 - 12:00am</p>
+                                    </div>
+                        
+                                </div>
+                        
+                                <div class="package d-flex">
+                        
+                                    <div class="circle"></div>
+                        
+                                    <div class="text flex-column">
+                                        <h3>Call All My Clients</h3>
+                                        <p>05/11/2022 - 12:00am</p>
+                                    </div>
+                        
+                                </div>
+                        
+                                <div class="package d-flex">
+                        
+                                    <div class="circle"></div>
+                        
+                                    <div class="text flex-column">
+                                        <h3>Finish The Development Workshop</h3>
+                                        <p>20/12/2022 - 12:00am</p>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </section>
+
+                        <!-- Latest Post -->
+                        <section class="post flex-column p-20 bg-white">
+                            <h3>Latest Post</h3>
+                        
+                            <div class="content flex-column mt-20">
+                                <div class="identify d-flex">
+                                    <img src="images/elzero.jpg" alt="">
+                                    <div class="text flex-column">
+                                        <h3>Osama Elzero</h3>
+                                        <p>About 3 Hours Ago</p>
+                                    </div>
+                                </div>
+                        
+                                <p>You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
+                        
+                                <div class="famous d-flex">
+                                    <div class="likes d-flex">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p>1.8K</p>
+                                    </div>
+                        
+                                    <div class="comments d-flex">
+                                        <i class="fa-regular fa-comments"></i>
+                                        <p>500</p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </section>
+
+                        <!-- Social Media Stats -->
+                        <section class="social-media-stats p-20 bg-white">
+                            <h3 class="box-head">social Media Stats</h3>
+                        
+                            <div class="content mt-20">
+                        
+                                <div class="twitter social-box">
+                                    <i class="fa-brands fa-x-twitter social-icon"></i>
+                                    <div class="info d-flex">
+                                        <p>90K Followers</p>
+                                        <a href="#" class="social-button">Follow</a>
+                                    </div>
+                                </div>
+                        
+                                <div class="face social-box">
+                                    <i class="fa-brands fa-facebook-f social-icon"></i>
+                                    <div class="info d-flex">
+                                        <p>2M Likes</p>
+                                        <a href="#" class="social-button">Like</a>
+                                    </div>
+                                </div>
+                        
+                                <div class="youtube social-box">
+                                    <i class="fa-brands fa-youtube social-icon"></i>
+                                    <div class="info d-flex">
+                                        <p>1M Subscribers</p>
+                                        <a href="#" class="social-button">Subscribe</a>
+                                    </div>
+                                </div>
+                        
+                                <div class="linkedin social-box">
+                                    <i class="fa-brands fa-linkedin-in social-icon"></i>
+                                    <div class="info d-flex">
+                                        <p>70K Followers</p>
+                                        <a href="#" class="social-button">Follow</a>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </section>
+
+                    </div>
+                    
+                    
+                    <!-- Tables' Projects -->
+                    <section class="projects p-20 bg-white">
+                        <h3 class="box-head">Projects</h3>
+                        <div class= "mt-20 responsive-table">
+
+                            <table>
+            
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Finish Date</th>
+                                        <th>Client</th>
+                                        <th>Price</th>
+                                        <th>Team</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+            
+                                <tbody>
+            
+                                    <tr>
+                                        <td>Ministry Wikipedia</td>
+                                        <td>10 May 2022</td>
+                                        <td>Ministry</td>
+                                        <td>$5300</td>
+                                        <td>
+                                            <img src="images/team-01.png" alt="">
+                                            <img src="images/team-02.png" alt="">
+                                            <img src="images/team-03.png" alt="">
+                                            <img src="images/team-05.png" alt="">
+                                        </td>
+                                        <td><p class="pending status">Pending</p></td>
+                                    </tr>
+                
+                                    <tr>
+                                        <td>Elzero Shop</td>
+                                        <td>12 Oct 2021</td>
+                                        <td>Elzero Company</td>
+                                        <td>$1500</td>
+                                        <td>
+                                            <img src="images/team-01.png" alt="">
+                                            <img src="images/team-02.png" alt="">
+                                            <img src="images/team-05.png" alt="">
+                                        </td>
+                                        <td><p class="in-progress status">In Progress</p></td>
+                                    </tr>
+                
+                                    <tr>
+                                        <td>Bouba App</td>
+                                        <td>05 Sep 2021</td>
+                                        <td>Bouba</td>
+                                        <td>$800</td>
+                                        <td>
+                                            <img src="images/team-02.png" alt="">
+                                            <img src="images/team-03.png" alt="">
+                                        </td>
+                                        <td><p class="completed status">Completed</p></td>
+                                    </tr>
+                
+                                    <tr>
+                                        <td>Mahmoud Website</td>
+                                        <td>22 May 2021</td>
+                                        <td>Mahmoud</td>
+                                        <td>$600</td>
+                                        <td>
+                                            <img src="images/team-01.png" alt="">
+                                            <img src="images/team-02.png" alt="">
+                                        </td>
+                                        <td><p class="completed status">Completed</p></td>
+                                    </tr>
+                
+                                    <tr>
+                                        <td>Sayed Website</td>
+                                        <td>24 May 2021</td>
+                                        <td>Sayed</td>
+                                        <td>$300</td>
+                                        <td>
+                                            <img src="images/team-03.png" alt="">
+                                            <img src="images/team-01.png" alt="">
+                                        </td>
+                                        <td><p class="rejected status">Rejected</p></td>
+                                    </tr>
+                
+                                    <tr>
+                                        <td>Arena Application</td>
+                                        <td>01 Mar 2021</td>
+                                        <td>Arena Company</td>
+                                        <td>$2600</td>
+                                        <td>
+                                            <img src="images/team-01.png" alt="">
+                                            <img src="images/team-02.png" alt="">
+                                            <img src="images/team-03.png" alt="">
+                                            <img src="images/team-04.png" alt="">
+                                        </td>
+                                        <td><p class="completed status">Completed</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+        </div>    
+
+        <!-- End Dashboard -->
+    </body>
+
+</html>

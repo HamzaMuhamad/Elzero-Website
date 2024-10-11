@@ -1,0 +1,155 @@
+@media (min-width: 768px) {
+    main.dashboard .dash-page {
+        grid-template-columns: 1fr auto
+    }
+} 
+@media (max-width: 767px) {
+    main.dashboard .dash-page {
+        grid-template-columns: 1fr
+    }
+
+    main.dashboard .dash-page .analytics {
+        order: -1
+    }
+} 
+
+
+.analytics {
+    align-self: flex-start;
+}
+
+.files {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.file i {
+    top: 10px;
+    left: 10px;
+}
+
+.file > img {
+    width: 70px;
+    transition: var(--def-trans);
+    margin-top: 20px;
+}
+
+.file {
+    text-align: center;
+}
+
+.file:hover img {
+    transform: rotate(5deg);
+}
+
+.file h4 {
+    font-size: 1rem;
+}
+
+.file p {
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.file .info {
+    padding-top: 15px;
+    border-top: 1px solid #EEE;
+}
+
+.analytics {
+    min-width: 250px;
+
+}
+
+.analytics [class*="total"] {
+    border: 1px solid #EEE;
+    border-radius: 7px;
+}
+
+.analytics [class*="total"] i {
+    left: 7.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.analytics [class*="total"] .des {
+    flex: 1;
+}
+
+.analytics [class*="total"] p:first-child {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.analytics [class*="total"] p:last-child {
+    margin-top: 5px;
+}
+
+
+.analytics .total-pdf i {
+    background-color: var(--blue1Fade);
+    color: var(--blue1);
+}
+
+.analytics .total-images i {
+    background-color: var(--green1Fade);
+    color: var(--green1);
+}
+
+.analytics .total-word i {
+    background-color: rgba(255, 0, 0, 0.151);
+    color: var(--red1);
+}
+
+.analytics .total-csv i {
+    background-color: var(--orange1Fade);
+    color: var(--orange1);
+}
+
+.analytics .upload {
+    margin: 15px auto 0;
+    border: none;
+    width: fit-content;
+    
+}
+
+.analytics .upload::before {
+    content: "\f102";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 13px;
+}
+
+.analytics .upload:hover::before {
+    animation: updown .7s infinite alternate linear;
+}
+
+.analytics .upload input {
+    border: none;
+    background-color: var(--brandColor);
+    color: white;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* ANIMATION */
+@keyframes updown {
+    50% {
+        transform: translateY(-75%);
+    }
+}

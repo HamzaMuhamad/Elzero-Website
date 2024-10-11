@@ -1,0 +1,309 @@
+/* Start Site Control */
+
+.site-control .onOroff {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.site-control textarea {
+    resize: none;
+    background-color: white;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-color: rgb(184, 184, 184);
+    caret-color: var(--brandColor);
+}
+
+.site-control textarea::placeholder {
+    font-size: .8rem;
+    font-family: "Fira Mono";
+}
+/* End Site Control */
+
+/* Start General Info */
+
+
+.general-info textarea:focus {
+    outline: none;
+}
+
+.general-info form input {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.general-info form > input:first-of-type {
+    margin-bottom: 20px;
+}
+
+.general-info form input:focus {
+    outline: none;
+}
+
+
+.general-info form .change-email input[type="email"] {
+    background-color: rgb(223, 235, 255);
+    color: rgb(156, 156, 156);
+    cursor:no-drop;
+}
+
+.general-info form .change-email input[type="submit"] {
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    padding: 5px;
+    color: var(--brandColor);
+    cursor: pointer;
+    font-weight: bold;
+}
+/* End General Info */
+
+
+/* Start Security */
+.security > div {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.security > div:not(:last-child) {
+    border-bottom: 1px solid var(--gray1);
+}
+
+.security button {
+    border: none;
+    font-weight: 600;
+    padding: 7px 8px;
+    
+}
+
+.security button:focus {
+    outline: none;
+}
+
+
+.security input[type="submit"] {
+    border: none;
+    background-color: var(--brandColor);
+    color: white;
+    font-weight: bold;
+    padding: 7px 8px;
+}
+/* End Security */
+
+
+/* Start Social Info */
+
+.social-info form div {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-info form input {
+    padding-left: 50px;
+    border: 1px solid var(--gray2);
+    background-color: rgb(236, 236, 236);
+    caret-color: var(--brandColor);
+    font-size: 12px;
+}
+
+.social-info form input::placeholder {
+    font-size: .7rem;
+}
+
+.social-info form input:focus {
+    outline: none;
+}
+
+.social-info form div i {
+    height: 100%;
+    width: 40px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid var(--gray2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 13px;
+    transition: var(--def-trans);
+}
+
+.social-info form div input:focus + i {
+    color: black
+}
+
+/* End Social Info */
+
+/* Start Widget Control */
+.widgets .widg {
+    align-items: center;
+}
+
+.widgets .widg input[type="checkbox"] {
+    -webkit-appearace: none;
+    appearance: none;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 16px ;
+    height: 16px;
+    transition: var(--def-trans);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.widgets .widg input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+.widgets .widg input[type="checkbox"]:checked {
+    border-color: var(--brandColor);
+}
+
+.widgets .widg input[type="checkbox"]::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    background-color: var(--brandColor);
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--def-trans);
+}
+
+.widgets .widg input[type="checkbox"]:checked::before {
+    transform: translate(-50%, -50%) rotate(-360deg);
+    width: 200%;
+    height: 200%;
+}
+
+/* End Widget Control */
+
+
+/* Start Backup Manager */
+
+.backup form:first-of-type {
+    border-bottom: 1px solid var(--gray1);
+}
+
+.backup .select input {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 2px solid gray;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+
+}
+
+.backup .select input, 
+.backup .select label {
+    cursor: pointer;
+}
+
+.backup .select input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--brandColor);
+    transform: translate(-50%, -50%);
+    transition: var(--def-trans);
+    
+}
+
+.backup .select input:checked {
+    outline-color: var(--brandColor);
+}
+
+.backup .select input:checked::before {
+    width: 14px;
+    height: 14px;
+
+}
+
+.backup form:last-of-type {
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .backup form:last-of-type {
+        flex-direction: column;
+    }
+}
+
+.backup form:last-of-type input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid gray;
+    height: 80px;
+    flex: 1;
+
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: var(--def-trans);
+}
+
+.backup form:last-of-type input[type="radio"]::before {
+    content: "\f233";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+    transition: var(--def-trans);
+
+
+}
+
+.backup form:last-of-type input[type="radio"]:first-child::after {
+    content: "Megaman";
+    transition: var(--def-trans);
+}
+
+.backup form:last-of-type input[type="radio"]:nth-child(2)::after {
+    content: "Zero";
+    transition: var(--def-trans);
+}
+
+.backup form:last-of-type input[type="radio"]:nth-child(3)::after {
+    content: "Sigma";
+    transition: var(--def-trans);
+}
+
+.backup form:last-of-type input[type="radio"]:checked {
+    border-color: var(--brandColor);
+}
+
+.backup form:last-of-type input[type="radio"]:checked::after,
+.backup form:last-of-type input[type="radio"]:checked::before {
+    color: var(--brandColor);
+}
+
+/* End Backup Manager */
+
+
+
+
